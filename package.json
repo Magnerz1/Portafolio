@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "name": "portafolio",
+  "version": "1.0.0",
+  "main": "./src/js/.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": {
+    "name" : "Tomas Serna",
+    "email": "ossaserna78@gmail.com"
+  },
+  "license": "ISC",
+  "description":"My portfolio"
+  
+}
