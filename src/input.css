@@ -256,9 +256,21 @@ align-items: center;
 #myAbilities{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-evenly;
+    gap: 5rem;
     height: 100vh;
+}
+#ability-title{
+    font-size: 2rem;
+    background: #00aaff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00ddff, #0400ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #14a1c0, #c300ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -296,5 +308,24 @@ align-items: center;
 .text{
     color: #14a1c0;
 }
-
-
+#js-text{
+    margin-left: 0.4rem;
+}
+#ts-text{
+    margin-left: 0.4rem;
+}
+#sql-text{
+    margin-left: 1.4rem;
+}
+#ph-text{
+    margin-left: 1.2rem;
+}
+#technical-abilities{
+    gap: 4rem;
+}
+.pf-progress{
+    width: 24rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    
+}
