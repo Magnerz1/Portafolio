@@ -10,6 +10,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     --clst:(#0adcf3);
+    --background-gradientcyan:linear-gradient(to right, #14a1c0, #c300ff);
 }
 *{
     margin:0;
@@ -272,12 +273,14 @@ align-items: center;
     flex-direction: column;
     text-align: center;
 }
-.container{
+#container{
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
-    
+    box-shadow: 0 0 10px #9d07d9;
+    padding: 0.8rem;
+    border-radius: 2rem;
 }
 .circular-progress{
     position: relative;
@@ -315,17 +318,49 @@ align-items: center;
     margin-left: 0.4rem;
 }
 #sql-text{
-    margin-left: 1.4rem;
+    margin-left: -0.2;
 }
 #ph-text{
-    margin-left: 1.2rem;
+    margin-left: -0.2rem;
 }
 #technical-abilities{
     gap: 4rem;
 }
+#profesional-abilities{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .pf-progress{
-    width: 24rem;
-    height: 2rem;
-    border: 1px solid #fff;
-    
+ margin-bottom: 5rem;
+}
+.pf-progress h4{
+    margin: 0 0 1rem 1rem;
+    letter-spacing: .5px;
+    color: var(--text-gradient);
+}
+.progress-bar{
+    position: relative;
+    width:24rem;
+    height: 1.75rem;
+    border-radius: 1.75rem;
+    background: #063f4c;
+    box-shadow: 0 0 10px #9d07d9;
+}
+.progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color:#063f4c;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 7.5rem;
+    background:var(--background-gradientcyan);
+    transition: width .5s linear;
 }

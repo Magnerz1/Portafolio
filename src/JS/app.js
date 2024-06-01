@@ -106,6 +106,13 @@ let phProgress = setInterval(() => {
     }
 }, phSpeed);
 
+const spans = document.querySelectorAll('.progress-bar span');
+
+    spans.forEach((span) =>{
+        span.style.width = span.dataset.width;
+        
+    });
+
 // let htmlCircularProgress = document.getElementById("html-progress"),
 //     htmlProgressValue = document.getElementById("html-value");
 
